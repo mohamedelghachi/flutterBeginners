@@ -18,14 +18,7 @@ class MyFirstWidget extends StatelessWidget {
           backgroundColor: Colors.green[600],
         ),
         body: Center(
-            child: Text(
-              'Body de l\'application',
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                  fontFamily: 'Satisfy',
-                  letterSpacing: 2.0),
-            )),
+            child: Image(image:AssetImage('assets/beautiful-tree.jpg'))),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Text('+'),
