@@ -18,7 +18,14 @@ class MyFirstWidget extends StatelessWidget {
           backgroundColor: Colors.green[600],
         ),
         body: Center(
-            child: Image(image:AssetImage('assets/beautiful-tree.jpg'))),
+            child: OutlinedButton(
+              style: ButtonStyle(
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.green),
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.yellow),
+                side: MaterialStateProperty.all(BorderSide(color: Colors.blue))
+              ),
+                onPressed: () {},
+                child:Text('TextButton'))),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           child: Text('+'),
